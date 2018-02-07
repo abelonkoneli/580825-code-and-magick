@@ -19,7 +19,7 @@ var renderCloud = function (ctx, x, y, color) {
 
 var getMaxElement = function (arr) {
   var maxElement = arr[0];
-    for (var i = 0; i < arr.length; i++) {
+  for (var i = 0; i < arr.length; i++) {
     if (arr[i] > maxElement) {
       maxElement = arr[i];
     }
@@ -31,7 +31,7 @@ window.renderStatistics = function (ctx, players, times) {
   renderCloud(ctx, CLOUD_X + GAP, CLOUD_Y + GAP, 'rgba(0, 0, 0, 0.7)');
   renderCloud(ctx, CLOUD_X, CLOUD_Y, '#fff');
   var maxTime = getMaxElement(times);
-    for (var i = 0; i < players.length; i++) {
+  for (var i = 0; i < players.length; i++) {
     if (players[i] === 'Вы') {
       ctx.fillStyle = 'rgba(255, 0, 0, 1)';
     } else {
